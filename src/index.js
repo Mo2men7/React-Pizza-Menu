@@ -72,11 +72,15 @@ function Menu() {
     <main className="menu">
       <h2>Our Menu</h2>
       {pizzas.length > 0 && (
-        <ul className="pizzas">
-          {pizzas.map((pizza) => (
-            <Pizza pizzaObj={pizza} />
-          ))}
-        </ul>
+        <>
+          {/* <React.Fragment><React.Fragment> */}
+          <p>Authentic Italian cuisine. 6 creative dishes to choose from.</p>
+          <ul className="pizzas">
+            {pizzas.map((pizza) => (
+              <Pizza pizzaObj={pizza} />
+            ))}
+          </ul>
+        </>
       )}
     </main>
   );
