@@ -68,3 +68,59 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+# Pizza Menu Page
+
+This project is a simple React application that displays a pizza menu. It includes components for the header, menu, individual pizza items, and footer. The application is structured in a modular way to make it easy to understand and maintain. This code was learned and written during a course I purchased from Udemy.
+
+## Components
+
+### App Component
+
+The `App` component serves as the main container for the application. It includes the `Header`, `Menu`, and `Footer` components.
+
+### Header Component
+
+The `Header` component renders the header of the page, which includes the title "Pizza Menu Page".
+
+### Menu Component
+
+The `Menu` component displays a list of pizzas. It maps over the `pizzaData` array to create a `Pizza` component for each pizza. If the pizza is sold out, it is not displayed.
+
+### Pizza Component
+
+The `Pizza` component takes a `pizzaObj` as a prop and displays the pizza's image, name, ingredients, and price. If the pizza is sold out, it returns `null` and does not render anything.
+
+### Footer Component
+
+The `Footer` component displays a message based on the current time. It checks if the current time is within the opening hours (9 AM to 5 PM). If the shop is open, it displays a message and a button to order. If the shop is closed, it displays a message with the opening hours.
+
+## Styles
+
+The application uses a CSS file (`index.css`) for styling. Make sure to include this file in your project to apply the styles.
+
+## How to Run
+
+1. Ensure you have Node.js installed.
+2. Create a new React application using `create-react-app` or use an existing one.
+3. Replace the contents of `src/index.js` with the provided code.
+4. Add the `pizzaData` array and all components (`App`, `Header`, `Menu`, `Pizza`, `Footer`) to the same file or split them into separate files as needed.
+5. Create an `index.css` file for the styles.
+6. Run the application using `npm start`.
+
+## Dependencies
+
+- React
+- ReactDOM
+
+These dependencies are included in a standard React setup created using `create-react-app`.
+
+## Learning Source
+
+This code was learned and written during a course I purchased from Udemy. The course provided comprehensive lessons on building React applications, including component-based architecture, state management, and styling.
+
+---
+
+By following the instructions above, you should be able to run and understand the Pizza Menu Page React application. This README provides a high-level overview of the components and their functionality, as well as instructions on how to set up and run the application.
